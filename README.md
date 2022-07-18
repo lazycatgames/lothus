@@ -37,7 +37,7 @@ If you fixed a bug, or have encountered an issue, we would like to know! You can
 **A:** Yes, free and open source. You can play, and edit the source code as you like. <br>
 
 **Q: It will be on Steam?** <br>
-**A:** Not now. <br>
+**A:** Well, the game is already connected with Steamworks, but we don't have a Game Page yet.<br>
 
 **Q: Can I be part of the team?** <br>
 **A:** Of course, we are looking for people to join our team. If you show a little effort we will be happy to add you to the team!<br>
