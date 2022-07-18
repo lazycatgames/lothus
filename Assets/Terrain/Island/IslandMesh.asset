@@ -15,13 +15,13 @@ MonoBehaviour:
   autoUpdate: 1
   useFalloff: 1
   mapChunkSize: 150
-  meshHeightMultiplier: 10
+  meshHeightMultiplier: 11
   meshHeightCurve:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0
-      value: -0.03225708
+      time: -0.002067566
+      value: -0.06958008
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -29,17 +29,26 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.30095404
-      value: 0.018971834
-      inSlope: 0.28727105
-      outSlope: 0.28727105
+      time: 0.30208293
+      value: 0.0041359775
+      inSlope: 1.0095892
+      outSlope: 1.0095892
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.121251784
+      inWeight: 0.1014608
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 1
-      value: 1
+      time: 0.46704572
+      value: 0.06367908
+      inSlope: 1.049035
+      outSlope: 1.049035
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.9803467
+      value: 0.740139
       inSlope: 2
       outSlope: 2
       tangentMode: 0

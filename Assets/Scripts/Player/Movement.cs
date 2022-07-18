@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
+using EZCameraShake;
 
 public class Movement : MonoBehaviour
 {
@@ -185,10 +186,12 @@ public class Movement : MonoBehaviour
 
         if (Input.GetButtonDown("Jump") && Player.Instance.stats.Stamina > 20 && canJump && isGrounded)
         {
+            CameraShake.Instance.ShakeCamera(0.0001f,0.01f);
             canJump = false;
             Jump();
             Invoke(nameof(ResetJump), jumpCooldown);
         }
+
 
 
         if (Input.GetKey(KeyCode.LeftShift) && Player.Instance.stats.Stamina >= 1f)

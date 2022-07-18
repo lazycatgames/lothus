@@ -20,6 +20,7 @@ public class WorldGenerator : MonoBehaviour
     private void Awake()
     {
 		falloffMap = FalloffGenerator.GenerateFalloffMap(terrainData.mapChunkSize);
+		noiseData.seed = Random.Range(0, 1000000);
 		GenerateWorld();
 		
     }

@@ -6,14 +6,18 @@ using UnityEngine;
 public class SmolRock : MonoBehaviour
 {
 
+    public TextMesh text;
+
+
     private void OnTriggerStay(Collider other)
     {
         if (other.tag.Equals("Player"))
         {
-           UIManager.Instance.collectTxt.gameObject.SetActive(true);
+            text.gameObject.SetActive(true);
 
             if (Input.GetKeyDown(KeyCode.E))
             {
+                
                 Collect();
             }
             
@@ -22,14 +26,19 @@ public class SmolRock : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        UIManager.Instance.collectTxt.gameObject.SetActive(false);
+        text.gameObject.SetActive(false);
+    }
+
+    private void Update()
+    {
+        text.transform.rotation = Player.Instance.transform.rotation;
     }
 
 
     void Collect()
     {
         UIManager.Instance.ItemCollected();
-        UIManager.Instance.collectTxt.gameObject.SetActive(false);
+        text.gameObject.SetActive(false);
         Inventory.Instance.data.rock++;
         Destroy(gameObject);
     }
